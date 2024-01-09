@@ -51,8 +51,6 @@ export class Visual implements IVisual {
     this.updateCount = 0;
     ReactDOM.render(this.reactRoot, this.target);
   }
-  // Your Visual class
-  // ...
   public update(options: VisualUpdateOptions) {
     this.formattingSettings =
       this.formattingSettingsService.populateFormattingSettingsModel(
@@ -81,7 +79,6 @@ export class Visual implements IVisual {
 
     ReactDOM.unmountComponentAtNode(this.target);
 
-    // Pass the data to the BarChart component with explicit type
     const reactRoot = React.createElement(BarChart, { data });
     ReactDOM.render(reactRoot, this.target);
   }
