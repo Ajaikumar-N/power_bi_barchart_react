@@ -43,7 +43,7 @@ export class Visual implements IVisual {
   private textNode: Text;
   private formattingSettings: VisualFormattingSettingsModel;
   private formattingSettingsService: FormattingSettingsService;
-  private reactRoot: React.FunctionComponentElement<{}>;
+  private reactRoot: React.FunctionComponentElement<object>;
   constructor(options: VisualConstructorOptions) {
     console.log("Visual constructor", options);
     this.formattingSettingsService = new FormattingSettingsService();

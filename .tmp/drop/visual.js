@@ -1243,8 +1243,6 @@ class Visual {
         this.updateCount = 0;
         react_dom__WEBPACK_IMPORTED_MODULE_1__.render(this.reactRoot, this.target);
     }
-    // Your Visual class
-    // ...
     update(options) {
         this.formattingSettings =
             this.formattingSettingsService.populateFormattingSettingsModel(_settings__WEBPACK_IMPORTED_MODULE_3__/* .VisualFormattingSettingsModel */ .E, options.dataViews[0]);
@@ -1268,7 +1266,6 @@ class Visual {
             valueName: categoricalDataView.values[0].source.displayName,
         }));
         react_dom__WEBPACK_IMPORTED_MODULE_1__.unmountComponentAtNode(this.target);
-        // Pass the data to the BarChart component with explicit type
         const reactRoot = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Compnents_BarChart__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, { data });
         react_dom__WEBPACK_IMPORTED_MODULE_1__.render(reactRoot, this.target);
     }
